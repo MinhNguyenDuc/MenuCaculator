@@ -52,7 +52,13 @@ void Management()
 			//input(a, b);
 			printf("Vui long nhap 2 so nguyen : ");
 			scanf("%d%d", &a, &b);
-			printf("Thuong 2 so la : %g\n", div(a, b));
+			if(b == 0)
+			{
+				printf("So thu 2 phai khac 0\n");
+			}
+			else{
+				printf("Thuong 2 so la : %g\n", div(a, b));
+			}
 			break;
 		}
 		default: {
